@@ -1,0 +1,27 @@
+{
+  "name": "Nightwatch.js test recorder",
+  "version": "0.5",
+  "manifest_version": 2,
+  "description": "Functional-oriented and javascript-friendly test recorder. Exports NightwatchJS scripts. Supports screenshots.",
+  "icons": {"48": "./resources/images/icon.png",
+          "128": "./resources/images/icon-128.png" },
+  "browser_action": {
+    "default_icon": "./resources/images/icon.png",
+    "default_popup": "./public/views/control.html",
+    "default_title": "Nightwatch.js test recorder"
+  },
+  "background": {
+    "scripts": ["./public/js/background.js"]
+  },
+  "permissions": [
+     "tabs",
+     "background",
+     "http://*/*"
+  ],
+  "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["./public/js/recorder.js"]
+  }],
+  "offline_enabled": true,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
