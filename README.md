@@ -6,7 +6,7 @@ Nightwatch.js test recorder extension for Google Chrome
 Installation
 ============
 
-1. Clone repo or [download](https://github.com/JyotiShir/nightwatchjs-test-recorder/archive/master.zip) and extract
+1. Clone repo or [download](https://github.com/4qu3l3c4r4/Nightwatch_Recorder/archive/master.zip) and extract
 1. Go to Chrome **Tools / Extensions**
 1. Expand **Developer mode**
 1. Click **Load unpacked extension...**
